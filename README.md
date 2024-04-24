@@ -2,14 +2,14 @@
 
 ## This Example shows you the possibilty to use distributed transacation with 2 Phase Commit in Spring boot Microservices using Atomikos
 
-# Overview of Example
+### Overview of Example
 
 There are three microservices involved
 1. OrderManager : Springboot service starts the Transactions and acts as an Orchestrator and Coordinator for the transaction. Saves data in purchase_order table.
 2. Payment: Springboot service participates the Global Transaction started by the OrderManager. Saves data in payment table.
 3. Inventory: Springboot service participates the Global Transaction started by the OrderManager. Updates data in inventory table.
 
-# Communication Flow 
+### Communication Flow 
 
 When the OrderManager Service receives an order to process, 
 1. It starts a transaction and creates a root id
