@@ -1,8 +1,8 @@
-### Distributed Transactions for Rest Services
+# Distributed Transactions for Rest Services
 
-# This Example shows you the possibilty to use distributed transacation with 2 Phase Commit in Spring boot Microservices using Atomikos
+## This Example shows you the possibilty to use distributed transacation with 2 Phase Commit in Spring boot Microservices using Atomikos
 
-## Overview of Example
+# Overview of Example
 
 There are three microservices involved
 1. OrderManager 2. Payment 3. Inventory
@@ -11,7 +11,7 @@ OrderManger Service: Springboot service starts the Transactions and acts as an O
 Payment Service: Springboot service participates the Global Transaction started by the OrderManager. Saves data in payment table.
 Inventory Service: Springboot service participates the Global Transaction started by the OrderManager. Updates data in inventory table.
 
-## Communication Flow 
+# Communication Flow 
 
 When the OrderManager Service receives an order to process, 
 1. It starts a transaction and creates a root id
