@@ -5,11 +5,9 @@
 # Overview of Example
 
 There are three microservices involved
-1. OrderManager 2. Payment 3. Inventory
-
-OrderManger Service: Springboot service starts the Transactions and acts as an Orchestrator and Coordinator for the transaction. Saves data in purchase_order table.
-Payment Service: Springboot service participates the Global Transaction started by the OrderManager. Saves data in payment table.
-Inventory Service: Springboot service participates the Global Transaction started by the OrderManager. Updates data in inventory table.
+1. OrderManager : Springboot service starts the Transactions and acts as an Orchestrator and Coordinator for the transaction. Saves data in purchase_order table.
+2. Payment: Springboot service participates the Global Transaction started by the OrderManager. Saves data in payment table.
+3. Inventory: Springboot service participates the Global Transaction started by the OrderManager. Updates data in inventory table.
 
 # Communication Flow 
 
