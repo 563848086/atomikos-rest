@@ -1,6 +1,6 @@
 # Distributed Transactions for Rest Services
 
-## This Example shows you the possibilty to use distributed transacation with 2 Phase Commit in Spring boot Microservices using Atomikos
+## This Example shows you the possibilty to use distributed transacations with 2 Phase Commit in Spring boot Microservices using Atomikos
 
 ### Overview of Example
 
