@@ -23,3 +23,11 @@ When the OrderManager Service receives an order to process,
 9. After Commit or Rollback is complete , then the transaction created by the OrderManager is closed.
 
 ![communication flow](./overview.png?raw=true "Overview")
+
+### Prerequisites
+
+    MySQL - An active MySQL instance running (Any other RDBMS can be used which support XA).
+    Database - Create a Database in the MySQl instance
+    Ensure that the DB server/port/user/pwd are updated in the application.properties
+
+
