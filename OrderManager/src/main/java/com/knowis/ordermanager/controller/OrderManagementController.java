@@ -21,8 +21,12 @@ public class OrderManagementController {
     private final OrderManagementService orderManagementService;
 
     public OrderManagementController(OrderManagementService orderManagementService) {
-
         this.orderManagementService = orderManagementService;
+    }
+
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck(){
+        return ResponseEntity.ok("Order Manager app is Running! version 1.0");
     }
 
     @GetMapping("/{orderId}/status")

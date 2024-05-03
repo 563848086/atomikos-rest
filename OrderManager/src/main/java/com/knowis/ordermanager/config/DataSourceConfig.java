@@ -50,7 +50,7 @@ public class DataSourceConfig {
 
     public Map<String, String> jpaProperties() {
         Map<String, String> jpaProperties = new HashMap<>();
-        jpaProperties.put("hibernate.hbm2ddl.auto", "none");
+        jpaProperties.put("hibernate.hbm2ddl.auto", "update");
         jpaProperties.put("hibernate.dialect", hibernateDialect);
         jpaProperties.put("hibernate.show_sql", "true");
         jpaProperties.put("hibernate.temp.use_jdbc_metadata_defaults", "false");
